@@ -5,3 +5,5 @@ include_guard(GLOBAL)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/utils.cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/options.cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/target.cmake)
+
+set(XL_CMAKE_EXISTS ON)
