@@ -16,7 +16,7 @@ macro(xl_add_target)
     xl_assert_defined(_at_TARGET_TYPE "TARGET_TYPE is required argument for add_target macro")
 
     if (NOT _at_TARGET_TYPE STREQUAL XL_TARGET_INTERFACE)
-        _assert_defined(_at_SOURCES "SOURCES is required argument for add_target macro if TARGET_TYPE not ${XL_TARGET_INTERFACE}")
+        xl_assert_defined(_at_SOURCES "SOURCES is required argument for add_target macro if TARGET_TYPE not ${XL_TARGET_INTERFACE}")
     endif()
 
     xl_add_prefix(_target_sources ${_at_SOURCE_PREFIX} "/" ${_at_SOURCES})
